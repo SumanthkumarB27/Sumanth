@@ -1,0 +1,31 @@
+Print double Number
+You are given a number N of double data type. You have to print number N the same as it is as given.
+__Note:- In the output, only two-digit you have to print after the decimal.
+Input Format
+The first line of input contains a number N.
+Output Format
+print number N. 
+Constraints
+1<=N<=1015
+Time Limit
+0.5 second
+Example
+Sample Input
+12345.20
+Sample Output
+12345.20
+
+output
+
+import java.util.*;
+  import java.io.*;
+  
+  public class Main {
+    public static void main(String args[]) throws IOException {
+      
+      //write your code here
+      Scanner s=new Scanner(System.in);
+      Double a=s.nextDouble();
+      System.out.printf("%.2f",a);
+    }
+  }
