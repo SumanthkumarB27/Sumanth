@@ -1,1 +1,155 @@
+what is java?
+programming language and a platform high level,secured
 
+application 
+desktop - media player,pdfreader
+webapps - banking app
+
+4 edition of Java
+1.java SE(Standard Edition)
+core java Programming platform . It include core topics oop,inhertance,exception,inner class
+2.Java Enterprise Edition
+java2ee jsp servelts web services etc
+3.java ME(MicroEdition) 
+mobile
+4.javaFX
+rich internal apps
+
+history
+1995 ,James Gosling
+
+Java Important features
+1.simple
+
+2.object oeriented
+
+3.platform independent
+prog.java->ByteCode 
+require jvm and jdk
+
+4.secure
+runtime os->c++
+os->jvm->->java so
+
+5.robust
+
+6.architecture netural
+2byte - 32  4byte - 64bit
+4byte in 32 and 16bit
+
+7.portable
+
+8.high performance - jit(just in time compiler)
+
+9.distributed 
+network distributed http
+
+10.multithreaded
+
+11.interpreted Language :ByteCOde->Interpreter(excutes line by line)
+
+
+how it works
+
+firstsample.java -> compiler -> bytcode (class file is created)
+firstsample.class -runs-> JVM
+cassLoader -> bytecodeverifier-> interpreter(directlty excutes)
+
+jdk->jre->jvm+(jarfiles(only.class file),otherfiles)->development tools 
+jdk and jre exixts
+jvm provides runtime
+
+
+classloader(loading the .class file)
+
+heap stack pcregister classArea nativeMethods
+      |
+      excutionEngine  -  nativeMethods - javaNativeLibraries
+      
+      
+heap- related to objects
+stack- methos calls,local variable
+pcregister- current excution of thread address
+class area- name of class ,static variable, etc
+
+
+execution Engine
+1.Jit
+2.Processer
+
+
+Work of jvm
+loadCode
+ExcuteCode
+provide runtime
+
+
+differnec b/w java c++
+
+c++ contains pointer,platform dependent,has goto keyword,contains strucutres and union,,support operator overloading,uses compiler ,no built in thread support,can support multiple inheritane.
+java visaversa of c++
+
+
+input and output in java
+
+Streams in java
+-java programs i/o through streams
+-java streams are flow of data you can either read from or write to
+
+input Stream = data source ->stream ->program
+output Stream = program ->stream ->Destination
+
+Streams are of 2 types
+Byte Stream-
+provide a convenient means for handling i/o of bytes
+1byte read at a time 1byte=8bit
+At the top are 2 abstract classes : inputStream and OutputStream
+
+Character Stream-
+provide a convenient means for handling i/o of Characters
+they are defined by 2 class hierachies
+2byte read at a time
+At the top are 2 abstract classes : Read and writer
+
+
+System class :the predefined Stream
+-System contains 3 predefined Stream in out err.
+-these fields are declared as public static and final wthini System
+
+System.out refers to the standard output Stream,By default console.
+System.in refers to standard input ,default keyboard.
+System.err refers to standard error stream which is the console by default
+
+System.in is an object of type InputStream
+System.out and System.err are objects of type PrintStream
+
+reading console input using Buffered Read
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+String read=br.readLine();
+Systen.out.println(read);
+
+bufferedReader-characterStream
+System.in - ByteStream
+InputStreamReader - convertd char to byte.
+.read()-reads only one charcter
+.readLine()-COmplete line
+
+Reading console input using Scanner
+
+Scanner(InputStream from)
+Scanner s=new Scanner(System.in);
+int n=s.nextInt();
+String s=s.nextLine();
+
+
+buffer reader vs Scanner
+
+Parsing input (example) 1234 is string in buffer 1234 is convert and printed in Scanner
+thread Saafe-Syncronized(buffer)
+buffer Size=buffer(8kb) and SCan(1kb) so for large data Buffers is used
+speed -buffer is fast
+
+console-output
+
+console output is most easily accomplished with print() and println().
+these methods are defined by the class PrintStream
