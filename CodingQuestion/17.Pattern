@@ -1,0 +1,42 @@
+One Pattern
+Print in the output the exact pattern provided below 
+1 
+1 1 
+1 1 1 
+1 1 1 1 
+1 1 1 1 1
+Input format
+A single integer N
+Output format
+Print the same pattern provided in the problem statement.
+Constraints
+N=1
+Input
+1
+Output
+1 
+1 1 
+1 1 1 
+1 1 1 1 
+1 1 1 1 1
+
+output
+import java.util.*;
+  import java.io.*;
+  
+  public class Main {
+    public static void main(String args[]) throws IOException {
+      
+      //write your code here
+      int N=1;
+      for(int i=1;i<=5;i++)
+      {
+        for(int j=1;j<=i;j++)
+        {
+          System.out.print(N+" ");
+        }
+        System.out.println(" ");
+      }
+      
+    }
+  }
