@@ -1,0 +1,38 @@
+Sum of Digits
+PrepBuddy gave you a number X and asks you to find the sum of the digits present in the number.
+Input format
+One integer is provided denoting the value of X.
+Output format
+Print the sum of digits of X.
+Constraints
+1<=X<=106
+Time Limit
+1 ​secon
+Example
+Input
+102345
+Output
+15
+Sample test case explanation
+Sum of digit =1+0+2+3+4+5=15
+
+output
+import java.util.*;
+  import java.io.*;
+  
+  public class Main {
+    public static void main(String args[]) throws IOException {
+      
+      //write your code here
+      Scanner s=new Scanner(System.in);
+      int sum=0;
+      int X=s.nextInt();
+      while(X>0)
+      {
+        int lastdig=X%10;;
+        sum=sum+lastdig;
+        X=X/10;
+      }
+      System.out.println(sum);
+    }
+  }
